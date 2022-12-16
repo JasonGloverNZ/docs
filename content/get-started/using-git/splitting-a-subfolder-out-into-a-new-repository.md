@@ -86,5 +86,16 @@ If you create a new clone of the repository, you won't lose any of your Git hist
 
 11. Push your changes to the new repository on {% data variables.product.product_name %}.
     ```shell
-    git push -u origin BRANCH-NAME
+    $ git branch -M BRANCH-NAME
+    
+    $ git push -u origin BRANCH-NAME
     ```
+    
+   
+{% note %}
+
+You should repeat step 11 for each branch you want to “keep”.  (Otherwise your new repo will only have one branch).
+
+Ideally you are perfomring this process on a repo where you'd closed all of your feature branches so you only have to worry about master, but many time that just isn't a practical reality.  So don't forget those other branches!!
+
+{% endnote %}
